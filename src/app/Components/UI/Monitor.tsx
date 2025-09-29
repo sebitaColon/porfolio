@@ -10,9 +10,10 @@ export default function Monitor() {
             <div className='w-auto h-auto relative p-5 z-20'>
                 {/*monitor */}
                 <div className='monitor w-[250px] h-80 relative z-10'>
+                    <div className='border-2 border-slate-500 z-50 w-full h-full absolute'></div>
                     <div className='w-full h-full md:-rotate-90 flex justify-center items-start absolute z-10 md:items-center md:justify-center md:w-[120%] md:h-[50%] md:-left-[35%] md:top-[25%]'>
                         <div className="w-11/12 py-1 px-2 mt-[25%] rounded-full h-auto bg-white">
-                            <h1 className="text-black text-tiny maquina md:text-sm">
+                            <h1 className="text-black text-tiny maquina text-[0.60rem] md:text-sm">
                                 Hello, <span className="text-blue-700">Welcome</span> to my portfolio
                             </h1>
                         </div>
