@@ -12,6 +12,7 @@ import react from '../assets/react.svg'
 import tailwindcss from '../assets/tailwindcss.svg'
 import Mouse from "./UI/Mouse";
 import mousepad from "../assets/fondoMousePad.jpeg"
+import prisma from "../assets/prisma.svg"
 
 export default function PcArmada() {
   return (
@@ -21,14 +22,15 @@ export default function PcArmada() {
           <Image src={mousepad} alt="icon" className="w-90 border-2 border-white h-54 absolute z-10 bottom-8 -left-24" style={{ transform: "skewX(45deg)" }}/>
           <h1 className='absolute w-90 h-54 text-white font-bold flex gap-2 items-end pb-5 p-2 justify-center z-50 bottom-18 -left-6' style={{ transform: "skewX(45deg)" }}>MY SKILLS</h1>
           <div className='absolute w-90 h-54 flex gap-2 items-end pb-5 p-2 justify-center z-50 bottom-8 -left-24' style={{ transform: "skewX(45deg)" }} >
-            <Image src={github} alt="icon" width={30}/>
-            <Image src={ts} alt="icon" width={30}/>
-            <Image src={css} alt="icon" width={30}/>
-            <Image src={html} alt="icon" width={30}/>
-            <Image src={js} alt="icon" width={30}/>
-            <Image src={postgresql} alt="icon" width={30}/>
-            <Image src={react} alt="icon" width={30}/>
-            <Image src={tailwindcss} alt="icon" width={30}/>
+            <Image src={github} alt="icon" width={25}/>
+            <Image src={ts} alt="icon" width={25}/>
+            <Image src={css} alt="icon" width={25}/>
+            <Image src={html} alt="icon" width={25}/>
+            <Image src={js} alt="icon" width={25}/>
+            <Image src={postgresql} alt="icon" width={25}/>
+            <Image src={react} alt="icon" width={25}/>
+            <Image src={tailwindcss} alt="icon" width={25}/>
+            <Image src={prisma} alt="icon" width={25}/>
           </div>
           <div className="h-[300px] w-[400px] bg-[#a15824] bottom-full absolute" style={{ transformOrigin: "bottom", transform: "skewX(45deg)" }} ></div>
           <div className="h-full w-[300px] bg-[#66320e] -left-[300px] top-0 absolute" style={{ transformOrigin: "right", transform: "skewY(45deg)" }} ></div>

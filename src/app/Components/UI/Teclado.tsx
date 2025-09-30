@@ -9,10 +9,11 @@ type Tecla = {
   w?: string;
   empty?: boolean;
 };
+
 const rows: Tecla[][] = [
-  [{ w: "35%", span: 2 }, {}, {}, {}, { w: "45%", span: 2 }, {}, {}, {}, {}, {}],
+  [{ w: "95%", span: 1 }, {empty: true}, {}, {}, {}, {}, { empty:true }, {}, {}, {},],
   [{}, {}, {}, { key: 4 }, { key: 6 }, { key: 0 }, { key: 10 }, { key: 12, span: 2, w: "90%" }, {}],
-  [{ w: "90%", span: 2 }, { key: 1 }, { key: 3 }, {}, { key: 9 }, {}, {}, {}, {}, {}],
+  [{ w: "90%", span: 2 }, { key: 1 }, { key: 3 }, {}, { key: 9 }, {}, {}, {}, {},],
   [{}, {}, { key: 8 }, { key: 5 }, { key: 7 }, { key: 2 }, {empty: true}, {empty: true}, { key: 30 }, {empty: true}],
   [{}, {}, { key: 11, span: 3 }, {}, {empty: true}, {}, {}, {}, {}, {}]
 ];
@@ -59,23 +60,26 @@ export default function Teclado() {
       >
         <div className="grid w-full h-full bg-slate-500 grid-rows-5 gap-y-1 p-1">
           {rows.map((row, i) => (
-            <div
-              key={i}
-              className={`w-full h-full grid gap-x-1 grid-rows-1 grid-cols-${row.length}`}
-            >
-              {row.map((keyObj: Tecla, j) => {
-                if (keyObj.empty) return <div key={j}></div>; 
-                const isActiveKey = keyObj.key !== undefined ? isPressed[keyObj.key] : false;
-                const colSpan = keyObj.span ? `col-span-${keyObj.span}` : "";
-                const width = keyObj.w ? `w-[${keyObj.w}]` : "";
-                return (
-                  <div
-                    key={j}
-                    className={`teclas ${isActiveKey ? "active" : ""} ${colSpan} ${width}`}
-                  />
-                );
-              })}
-            </div>
+           <div
+           key={i}
+           className={`w-full h-full grid gap-x-1 grid-rows-1`}
+           style={{ gridTemplateColumns: `repeat(${row.length}, minmax(0, 1fr))` }}
+         >
+           {row.map((keyObj: Tecla, j) => {
+             if (keyObj.empty) return <div key={j}></div>;
+             const isActiveKey = keyObj.key !== undefined ? isPressed[keyObj.key] : false;
+             return (
+               <div
+                 key={j}
+                 className={`teclas ${isActiveKey ? "active" : ""}`}
+                 style={{
+                   gridColumn: keyObj.span ? `span ${keyObj.span}` : undefined,
+                   width: keyObj.w ? keyObj.w : undefined
+                 }}
+               />
+             );
+           })}
+         </div>
           ))}
         </div>{" "}
       </div>
