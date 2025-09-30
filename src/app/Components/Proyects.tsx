@@ -2,6 +2,7 @@
 import React,{useEffect} from 'react'
 import AboutMe from './AboutMe'
 import "../style/title.css"
+import CardProyect from './UI/CardProyect';
 
 
 export default function Proyects() {
@@ -21,14 +22,10 @@ export default function Proyects() {
         <div className='w-full h-auto flex justify-center items-center lg:hidden'>
             <AboutMe/>
         </div>
-        <div className='divHover w-full flex flex-col h-auto justify-center items-center relative mb-16'>
+        <div className='divHover w-full flex flex-col h-auto justify-center items-center relative'>
           <h1 className='title-proyects text-[2.5rem] md:text-[4rem] lg:text-[5rem]'>PROYECTS</h1>
         </div>
-        <div className='w-full h-auto flex justify-center items-center'>
-            <div className='w-auto h-full flex flex-col items-center justify-center md:grid md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3 gap-5  '>
-
-            </div>
-        </div>
+        <CardProyect/>
     </div>
   )
 }

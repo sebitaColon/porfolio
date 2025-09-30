@@ -37,20 +37,20 @@
   }
 }
 
-.meteorito {
+/*.meteorito {
   border-radius: 50%;
   background: linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 1) 0%,       /* punta blanca brillante */
-    rgba(255, 255, 0, 0.8) 25%,      /* amarillo fuego */
-    rgba(255, 165, 0, 0.6) 50%,      /* naranja */
-    rgba(255, 69, 0, 0.4) 75%,       /* rojo */
-    rgba(255, 69, 0, 0) 100%          /* desaparece */
+    rgba(255, 255, 255, 1) 0%,       //* punta blanca brillante 
+    rgba(255, 255, 0, 0.8) 25%,      //* amarillo fuego 
+    rgba(255, 165, 0, 0.6) 50%,      //* naranja 
+    rgba(255, 69, 0, 0.4) 75%,       //* rojo 
+    rgba(255, 69, 0, 0) 100%           //* desaparece 
   );
   filter: blur(10px);
   animation: meteor 10s linear infinite;
-  animation-delay: 2s; /* podés randomizar */
-}
+  animation-delay: 2s;  //podés randomizar 
+}*/
 
 .fondo::after{
   position: absolute;

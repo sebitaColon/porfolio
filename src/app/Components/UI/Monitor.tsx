@@ -2,7 +2,6 @@ import React from 'react'
 import "../../style/setUp.css"
 import Image from 'next/image'
 import FondoWindows from "../../assets/fondos-windows-2.jpg"
-import iconGit from '../../assets/github.svg'
 
 export default function Monitor() {
     return (

@@ -31,7 +31,6 @@ export default function PcArmada() {
             <Image src={react} alt="icon" width={25}/>
             <Image src={tailwindcss} alt="icon" width={25}/>
             <Image src={prisma} alt="icon" width={25}/>
-
           </div>
           <div className="h-[300px] w-[400px] bg-[#a15824] bottom-full absolute" style={{ transformOrigin: "bottom", transform: "skewX(45deg)" }} ></div>
           <div className="h-full w-[300px] bg-[#66320e] -left-[300px] top-0 absolute" style={{ transformOrigin: "right", transform: "skewY(45deg)" }} ></div>
