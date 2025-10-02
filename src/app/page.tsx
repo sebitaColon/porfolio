@@ -1,10 +1,12 @@
 import AboutMe from "./Components/AboutMe";
 import Layout from "./Components/Layout";
+import Nav from "./Components/Nav";
 import PcArmada from "./Components/PcArmada";
 import Proyects from "./Components/Proyects";
 export default function Home() {
   return (
     <Layout>        
+        <Nav/>
         <div className="h-auto lg:max-w-[1024px] w-full z-10">
           <div className="w-full h-auto min-h-[750px] grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2">
             <div className=" md:col-span-2 pt-2 lg:row-span-2">
