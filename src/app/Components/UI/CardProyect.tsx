@@ -46,9 +46,9 @@ export default function CardProyect() {
         },
     ];
     return (
-        <div className="w-full h-auto p-10 grid gap-6">
+        <div className="w-full h-auto p-10 flex flex-col gap-6">
             {projects.map((p, i) => (
-                <div key={i} className="bg-gray-800 p-4 w-full h-auto rounded-xl shadow-lg">
+                <div key={i} className="bg-black/50 backdrop-blur-2xl p-4 w-full h-auto rounded-xl shadow-lg">
                     <div className='w-full flex justify-between'>
                         <h1 className='lg:text-3xl font-bold'>{p.title}</h1>
                         <a href={p.github} target="_blank" className='w-auto h-auto text-black font-bold py-2 px-5 rounded-xl bg-white'>Code</a>

@@ -59,7 +59,7 @@ export default function Nav() {
 
     return (
         <nav className="max-w-[1024px] h-20 top-0 w-full flex justify-center items-center z-50">
-            <div className='fixed max-w-[800px] w-full mt-10 flex items-center justify-center bg-black/50 rounded-2xl'>
+            <div className='hidden md:flex fixed max-w-[800px] w-full mt-10 items-center justify-center bg-black/50 rounded-2xl'>
                
                 <div className="mx-auto h-20 flex relative items-center justify-center">
                     <div className="inline-flex mx-auto flex-wrap items-center justify-center p-4 ">
