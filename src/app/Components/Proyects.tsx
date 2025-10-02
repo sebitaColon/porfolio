@@ -8,7 +8,6 @@ import CardProyect from './UI/CardProyect';
 export default function Proyects() {
   
   useEffect(() => {
-    
     const text = document.querySelector<HTMLElement>('.title-proyects');
     if (text) {
         text.innerHTML = text.innerText.split('').map((letter, i) => 
@@ -22,7 +21,7 @@ export default function Proyects() {
         <div className='w-full h-auto flex justify-center items-center lg:hidden'>
             <AboutMe/>
         </div>
-        <div className='divHover w-full flex flex-col h-auto justify-center items-center relative'>
+        <div id='projects' className='divHover scroll-mt-20 w-full flex flex-col h-auto justify-center items-center relative'>
           <h1 className='title-proyects text-[2.5rem] md:text-[4rem] lg:text-[5rem]'>PROYECTS</h1>
         </div>
         <CardProyect/>

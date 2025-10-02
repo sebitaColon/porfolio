@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 const customOrder = [0, 11, 1, 2, 11, 3, 4, 5, 1, 3, 6, 0, 1, 7, 11, 8, 9, 1, 8, 10, 7, 11, 20, 20, 20, 20, 20, 12, 12, 12, 12];
 
-
 type Tecla = {
   key?: number;
   span?: number;
