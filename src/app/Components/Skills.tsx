@@ -61,7 +61,7 @@ const skills: SkillCategory[] = [
 
 export default function Skills() {
     return (
-        <div className="w-full p-6 sm:p-10 min-h-screen text-white">
+        <div className="w-full p-6 sm:p-10 text-white">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
 
                 {/* Columna izquierda - Sidebar de categorías */}
