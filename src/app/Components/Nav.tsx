@@ -13,7 +13,7 @@ export default function Nav() {
             .filter(Boolean) as HTMLElement[];
 
         const handleScroll = () => {
-            const scrollY = window.scrollY + 20;
+            const scrollY = window.scrollY + 96;
             if (!sectionElements.length) return;
             // Antes de la primera sección -> home
             if (scrollY < sectionElements[0].offsetTop) {
@@ -52,21 +52,21 @@ export default function Nav() {
         const target = document.getElementById(id);
         if (!target) return;
         window.scrollTo({
-            top: target.offsetTop - 20,
+            top: target.offsetTop - 96,
             behavior: 'smooth',
         });
     };
 
     return (
-        <nav className="max-w-[1024px] h-20 top-0 w-full flex justify-center items-center z-50">
-            <div className='hidden md:flex fixed max-w-[800px] w-full mt-10 items-center justify-center bg-black/50 rounded-2xl'>
+        <nav className="max-w-[1024px] h-24 top-0 w-full flex justify-center items-center z-50">
+            <div className='hidden md:flex fixed w-full items-center justify-center bg-blue-950'>
                
-                <div className="mx-auto h-20 flex relative items-center justify-center">
+                <div className="mx-auto h-24 flex relative items-center justify-center">
                     <div className="inline-flex mx-auto flex-wrap items-center justify-center p-4 ">
                         {/* OVNI */}
                         <div
                             ref={ovniRef}
-                            className="top-2 left-6 absolute transition-transform duration-0"
+                            className="top-2 left-5 absolute transition-transform duration-75"
                             style={{ transform: 'translateX(0px)' }}
                         >
                             <div className="relative w-12 h-12">
@@ -82,14 +82,14 @@ export default function Nav() {
                         <div className="hidden w-full md:flex md:w-auto" id="navbar">
                             <ul className="flex flex-col md:flex-row md:space-x-8 md:mt-6 font-medium">
                                 {sections.map((link) => (
-                                    <li key={link}>
+                                    <li key={link} className='p-0'>
                                         <a
                                             href={`#${link}`}
                                             onClick={(e) => {
                                                 e.preventDefault();
                                                 handleClick(link);
                                             }}
-                                            className="block py-2 px-3 rounded-sm text-white hover:text-blue-400 transition-colors"
+                                            className="py-2 px-3 rounded-sm text-white hover:text-blue-400 transition-colors"
                                         >
                                             {link.charAt(0).toUpperCase() + link.slice(1)}
                                         </a>

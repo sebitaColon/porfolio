@@ -12,7 +12,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <main className="flex-1 flex flex-col w-full min-h-screen items-center text-white">
         {children}
       </main>
-      <div className="w-full h-20 flex items-center justify-center text-white font-bold backdrop-blur-2xl bg-black mt-10">
+      <div className="w-full h-16 flex items-center justify-center text-white font-bold backdrop-blur-2xl bg-black mt-5">
         <h1>© 2025  Made with ❤ by Sebastian Chacon</h1>
       </div>
     </div>
