@@ -1,4 +1,5 @@
 import AboutMe from "./Components/AboutMe";
+import ContactMe from "./Components/ContactMe";
 import Layout from "./Components/Layout";
 import Nav from "./Components/Nav";
 import PcArmada from "./Components/PcArmada";
@@ -25,6 +26,7 @@ export default function Home() {
         <CardProyect />
         <ComponentTitle TextTitle='skills' />
         <Skills />
+        <ContactMe/>
       </div>
     </Layout>
   );
